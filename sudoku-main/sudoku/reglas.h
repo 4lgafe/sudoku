@@ -3,6 +3,7 @@
 #define REGLAS_H
 #include "tablero.h"
 #include <fstream>
+#include <vector>
 
 typedef struct coords {
 	int fil;
@@ -23,7 +24,7 @@ public:
 	int dame_dimension()const;
 	int dame_celda(int f, int c)const;
 	bool terminado()const;
-	bool bloqueo()const;
+	bool bloqueo(int f, int c)const;
 	int dame_num_celdas_bloqueadas()const;
 	void dame_celda_bloqueada(int p, int& f, int& c)const;
 	bool es_valor_posible(int f, int c, int v)const;
