@@ -25,8 +25,8 @@ public:
 	int dame_celda(int f, int c)const;
 	bool terminado()const;
 	bool bloqueo(int f, int c)const;
-	int dame_num_celdas_bloqueadas()const;
-	void dame_celda_bloqueada(int p, int& f, int& c)const;
+	int dame_num_celdas_bloqueadas();
+	coords dame_celda_bloqueada(int p);
 	bool es_valor_posible(int f, int c, int v)const;
 	//modificadiores ¿¿DIO?? 
 	bool pon_valor(int f, int c, int v);
